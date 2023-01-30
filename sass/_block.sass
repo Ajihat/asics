@@ -1,0 +1,56 @@
+.block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    max-width: 1500px
+    width: 100%
+    margin: 200px auto
+    &__inner, &__inner-shoe
+        width: 50%
+    &__header
+        display: block
+        margin: 0 auto
+        width: 80%
+        color: #001f61
+    &__shoe
+        display: block
+        width: 550px
+        margin: 0 auto
+        color: #001f61
+    &__text
+        padding: 15px 0 0 25px
+        font-size: 24px
+        font-weight: 500
+        color: #001f61
+        &.block__text--right
+            padding: 15px 25px 0 0
+
+@media (max-width: 1550px)
+    .block
+        flex-wrap: wrap
+        &__inner, &__inner-shoe
+            width: 100%
+        &__inner
+            order: 2
+        &__inner-shoe
+            order: 1
+        &__header
+            max-width: 600px
+        &__text
+            max-width: 700px
+            width: 90%
+            padding: 50px 0 0 0
+            margin: 0 auto
+            text-align: center
+            &.block__text--right
+                padding: 50px 0 0 0
+        &__shoe
+            width: 90%
+            max-width: 550px
+            margin: 0 auto
+
+@media (max-width: 900px)
+    .block
+        margin: 100px auto
+        &__text
+            font-size: 18px
